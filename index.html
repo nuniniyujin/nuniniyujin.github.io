@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yujin Cho — Computer Vision & Perceptual Imaging</title>
+  <meta name="description" content="Yujin Cho is a PhD researcher at Université Paris-Saclay and DXOMARK, working on perceptual image quality, computational photography, and vision-language models.">
+  <meta name="theme-color" content="#f8f9f5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="nav-wrap">
+    <a class="wordmark" href="#about">Yujin Cho<span aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation"><a href="#bio">Bio</a><a href="#research">Research Interests</a><a href="#publications">Publications</a><a href="#awards">Awards</a></nav>
+  </div></header>
+  <main id="main" class="wrap">
+    <section class="profile" id="about" aria-labelledby="name">
+      <div class="profile-info">
+        <h1 id="name">Yujin Cho</h1>
+        <p class="profile-role">PhD Researcher · Computer Vision &amp; Perceptual Imaging</p>
+        <p class="affiliation">Université Paris-Saclay &amp; DXOMARK</p>
+        <p class="email">yujin dot cho at ens-paris-saclay dot fr</p>
+        <div class="profile-links"><a href="https://scholar.google.com/citations?user=2q5rKEIAAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://github.com/nuniniyujin">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/yujin-cho-18b343180/">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="portrait"><img src="profile.jpg" alt="Yujin Cho" width="2268" height="2691" fetchpriority="high"></figure>
+    </section>
+
+    <section class="bio-section" id="bio" aria-labelledby="bio-title">
+      <h2 id="bio-title">Bio</h2>
+      <p>I’m completing my PhD in Applied Mathematics at <strong>Université Paris-Saclay</strong>, within <strong>Centre Borelli</strong>, in collaboration with <strong>DXOMARK</strong>. I’m co-advised by <a href="https://dev.ipol.im/~facciolo/">Gabriele Facciolo</a> and <a href="https://sites.google.com/site/jeanmichelmorelcmlaenscachan/">Jean-Michel Morel</a>.</p>
+      <p>I develop interpretable methods for image quality assessment and computational photography. My research connects camera pipelines, portrait rendering, and vision-language models—making visual quality easier to measure, understand, and improve. In November 2026, I will begin a postdoctoral position working with <a href="https://www.laurentoudre.fr/">Laurent Oudre</a> and <a href="https://dev.ipol.im/~facciolo/">Gabriele Facciolo</a> on the <a href="https://www.pepr-ensemble.fr/appel-a-projets-de-recherche-aap2-les-laureats/">NeuroCoRe</a> project. My research will focus on multimodal learning, video understanding, and time-series modeling to study human behavior and interaction, using data from VR/AR environments and wearable devices such as smart glasses. Prior to research, I received the <a href="https://www.master-mva.com/">MVA</a> MS degree from ENS Paris-Saclay. Before pursuing my master’s degree, I worked at Renault in South Korea on the development and validation of vehicle infotainment systems.</p>
+      <p>I’m always happy to exchange ideas, discuss research, or explore potential collaborations—feel free to get in touch!</p>
+    </section>
+
+    <section class="research-section" id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research Interests</h2>
+      <ul class="research-interests" aria-label="Research interests">
+        <li>Computational Photography</li>
+        <li>Image Quality Assessment</li>
+        <li>Multimodal Learning</li>
+        <li>Video Understanding</li>
+        <li>Human-centered AI</li>
+      </ul>
+    </section>
+
+    <section class="publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="publication-bar"><h2 id="publications-title">Publications</h2><div class="filters" role="group" aria-label="Filter publications"><button type="button" class="active" data-filter="all" aria-pressed="true">All work <span>04</span></button><button type="button" data-filter="portrait" aria-pressed="false">Portrait quality</button><button type="button" data-filter="pipeline" aria-pressed="false">Camera pipelines</button></div></div>
+      <p id="filter-status" class="sr-only" aria-live="polite">Showing all 4 publications.</p>
+      <div class="publications">
+        <article class="publication" data-category="portrait" id="face-contrast">
+          <figure class="paper-teaser" data-figure-title="Face contrast">
+            <button type="button" class="teaser-open" aria-label="Enlarge figure: Face contrast" aria-haspopup="dialog"><img src="assets/teasers/face-contrast.webp" alt="Portraits captured with different smartphones, showing variations in facial contrast due to lighting and device-specific processing." width="1800" height="921" loading="lazy"><span class="enlarge-hint" aria-hidden="true">↗</span></button>
+            <figcaption class="teaser-caption columns-1"><span>Portraits captured with different smartphones, illustrating how lighting and device-specific processing shape facial contrast.</span></figcaption>
+          </figure>
+          <div class="paper-body"><p class="paper-meta">WACV 2027 <span>PORTRAIT QUALITY</span></p><h3>Interpretable Face Contrast Modeling for Smartphone Portrait Rendering</h3><p class="authors"><strong>Yujin Cho</strong>, Benoit Pochon, Jean-Michel Morel, Gabriele Facciolo</p><p class="paper-description">Decomposing face contrast into overall, eye, and micro-contrast, using a controlled dataset of 508 captures from 29 smartphones to connect interpretable metrics with human judgments.</p><div class="paper-links"><a href="https://github.com/nuniniyujin/FaceContrast">Code · GitHub <span aria-hidden="true">↗</span></a></div><details><summary>Research details</summary><p><strong>Decomposing face contrast.</strong> We characterize face contrast through four complementary perceptual dimensions: overall contrast, eye contrast, micro-contrast, and balanced contrast. This decomposition makes it possible to analyze distinct aspects of portrait rendering beyond a single global contrast score.</p>
+              <p><strong>Dedicated metrics aligned with human perception.</strong> We propose interpretable metrics tailored to these dimensions and grounded in human perceptual judgments. Realistic mannequin portraits, semantic face masks, and pairwise perceptual annotations support a controlled study of how each dimension contributes to perceived face contrast and balanced contrast preference.</p></details></div>
+        </article>
+        <article class="publication" data-category="pipeline" id="reference-free">
+          <figure class="paper-teaser" data-figure-title="Reference-free quality estimation">
+            <button type="button" class="teaser-open" aria-label="Enlarge figure: Reference-free quality estimation" aria-haspopup="dialog"><img src="assets/teasers/reference-free-isp.webp" alt="Left: noisy RAW image. Center: ISP-processed image with ground-truth PSNR of 35 dB, unavailable in practice. Right: proxy reference with predicted PSNR of 35.2 dB." width="1800" height="455" loading="lazy"><span class="enlarge-hint" aria-hidden="true">↗</span></button>
+            <figcaption class="teaser-caption columns-3"><span>Noisy RAW image</span><span>ISP-processed image<small>GT PSNR = 35 dB<br>(not available in practice)</small></span><span>Proxy reference<small>Predicted PSNR = 35.2 dB</small></span></figcaption>
+          </figure>
+          <div class="paper-body"><p class="paper-meta">PREPRINT · 2026 </p><h3>A Reference-Free Framework for Evaluating Single-Frame ISP Pipelines</h3><p class="authors"><strong>Yujin Cho</strong>, Sira Ferradans, Jean-Michel Morel, Gabriele Facciolo, Thomas Eboli</p><p class="paper-description">Estimating full-reference quality metrics without ground-truth images, through an ISO-aware proxy reference and lightweight adaptation to new camera pipelines.</p><div class="paper-links"><a href="https://arxiv.org/abs/2607.23321">arXiv <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="publication" data-category="pipeline" id="isp-transfer">
+          <figure class="paper-teaser" data-figure-title="Unpaired smartphone ISP transfer">
+            <button type="button" class="teaser-open" aria-label="Enlarge figure: Unpaired smartphone ISP transfer" aria-haspopup="dialog"><img src="assets/teasers/unpaired-isp.webp" alt="Two examples, each with three columns: RAW image, reconstructed prediction, and visually similar target reference." width="1800" height="951" loading="lazy"><span class="enlarge-hint" aria-hidden="true">↗</span></button>
+            <figcaption class="teaser-caption columns-3"><span>RAW image</span><span>Reconstructed prediction</span><span>Visually similar<br>target reference</span></figcaption>
+          </figure>
+          <div class="paper-body"><p class="paper-meta">CVPR WORKSHOP · NTIRE 2026 <span>CAMERA PIPELINES</span></p><h3>Lightweight Unpaired Smartphone ISP Transfer with Semantic Pseudo-Pairing</h3><p class="authors"><strong>Yujin Cho</strong>, Flavien Armangeon, Yanhao Li</p><p class="paper-description">Learning smartphone color rendering from unpaired images with semantic pseudo-pairing and a compact 7K-parameter network.</p><div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2026W/NTIRE/html/Cho_Lightweight_Unpaired_Smartphone_ISP_Transfer_with_Semantic_Pseudo-Pairing_CVPRW_2026_paper.html">Paper · CVF <span aria-hidden="true">↗</span></a></div><details><summary>Research details</summary><p>The method uses DINOv2 features and Fused Gromov-Wasserstein optimal transport to retrieve semantically related source and target images. It achieved an average rank of third across evaluation metrics on the hidden test set of the NTIRE 2026 Learned Smartphone ISP Challenge.</p></details></div>
+        </article>
+        <article class="publication" data-category="portrait" id="deqa">
+          <figure class="paper-teaser" data-figure-title="Texture–noise trade-off">
+            <button type="button" class="teaser-open" aria-label="Enlarge figure: Texture–noise trade-off" aria-haspopup="dialog"><img src="assets/teasers/texture-noise.webp" alt="Portrait comparison illustrating the trade-off between retaining texture and reducing noise." width="1800" height="882" loading="lazy"><span class="enlarge-hint" aria-hidden="true">↗</span></button>
+            <figcaption class="teaser-caption columns-2"><span>More texture · more noise</span><span>Less noise · less texture</span></figcaption>
+          </figure>
+          <div class="paper-body"><p class="paper-meta">ELECTRONIC IMAGING · 2026 <span class="paper-award">✧ BEST GENAI STUDENT PAPER</span></p><h3>Adapting DeQA-Score for Attribute-specific Portrait Quality Assessment</h3><p class="authors"><strong>Yujin Cho</strong>, Minh Khang Tran, Benoit Pochon, Jean-Michel Morel, Gabriele Facciolo, Sira Ferradans</p><p class="paper-description">Adapting a vision-language quality model to assess portrait texture and noise separately, using LoRA fine-tuning and pairwise human judgments.</p><div class="paper-links"><a href="https://library.imaging.org/ei/articles/38/12/GENAI-179">Paper · IS&T <span aria-hidden="true">↗</span></a></div><details><summary>Research details</summary>
+              <p><strong>From overall quality to individual attributes.</strong> DeQA-Score is trained to predict global Mean Opinion Scores (MOS), whereas portrait evaluation needs to distinguish texture preservation from noise suppression. We investigate how to adapt this model to attribute-specific Just Objectionable Difference (JOD) scores derived from pairwise human comparisons.</p>
+              <p><strong>Baseline analysis and adaptation.</strong> Experiments on controlled mannequin portraits examine different prompts and spatial input configurations, revealing limited attribute sensitivity in the pretrained model. We then use LoRA fine-tuning on realistic portraits with separate texture and noise annotations to align predictions with attribute-level human judgments.</p>
+              <table class="research-metrics"><caption>Correlation with human JOD scores after adaptation</caption><thead><tr><th scope="col">Attribute</th><th scope="col">SRCC</th><th scope="col">PLCC</th></tr></thead><tbody><tr><th scope="row">Noise</th><td>0.91</td><td>0.91</td></tr><tr><th scope="row">Texture</th><td>0.93</td><td>0.90</td></tr></tbody></table>
+              <p><strong>What drives the improvement?</strong> Analysis of the fine-tuning configuration identifies the vision encoder as the main contributor to perceptual learning, highlighting the importance of adapting visual representations for attribute-specific portrait assessment.</p>
+            </details></div>
+        </article>
+      </div>
+    </section>
+    <section class="challenge-section" id="challenge-reports" aria-labelledby="challenge-title">
+      <h2 id="challenge-title">Challenge Reports</h2>
+      <article class="challenge-report" id="bokeh-challenge">
+        <div class="paper-body">
+        <p class="paper-meta">CVPRW · NTIRE 2026 <span>CHALLENGE REPORT · CO-AUTHOR</span></p>
+        <h3>The First Controllable Bokeh Rendering Challenge at NTIRE 2026</h3>
+        <p class="authors">Tim Seizinger, Florin-Alexandru Vasluianu, …, <strong>Yujin Cho</strong>, …, Jiajia Liu</p>
+        <p class="paper-description">Contributed DALU-Net, a depth- and location-conditioned U-Net for controllable bokeh rendering, as the Centre Borelli team submission.</p>
+        <p class="challenge-result">6th in perceptual evaluation</p>
+        <div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2026W/NTIRE/html/Seizinger_The_First_Controllable_Bokeh_Rendering_Challenge_at_NTIRE_2026_CVPRW_2026_paper.html">Paper · CVF <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </article>
+      <article class="challenge-report challenge-report-text" id="isp-challenge-report">
+        <div class="paper-body">
+        <p class="paper-meta">CVPRW · NTIRE 2026 <span>CHALLENGE REPORT · CO-AUTHOR</span></p>
+        <h3>NTIRE 2026 Challenge on Learned Smartphone ISP with Unpaired Data: Methods and Results</h3>
+        <p class="authors">Georgy Perevozchikov, Daniil Vladimirov, Radu Timofte, …, <strong>Yujin Cho</strong>, Flavien Armangeon, Yanhao Li, …, Uma Mudenagudi</p>
+        <p class="paper-description">Contributed a lightweight unpaired ISP method based on semantic pseudo-pairing. See our method paper for details.</p>
+        <div class="paper-links challenge-links"><a href="https://openaccess.thecvf.com/content/CVPR2026W/NTIRE/html/Perevozchikov_NTIRE_2026_Challenge_on_Learned_Smartphone_ISP_with_Unpaired_Data_CVPRW_2026_paper.html">Paper · CVF <span aria-hidden="true">↗</span></a><a href="#isp-transfer">Our method paper <span aria-hidden="true">↑</span></a></div>
+        </div>
+      </article>
+    </section>
+    <section class="awards-section" id="awards" aria-labelledby="awards-title">
+      <h2 id="awards-title">Awards &amp; Honors</h2>
+      <div class="award"><span class="award-year">2026</span><div><h3>Best GENAI Student Paper Award</h3><p>Electronic Imaging · <a href="#deqa">Adapting DeQA-Score for Attribute-specific Portrait Quality Assessment</a></p></div></div>
+    </section>
+    <section class="education-section" id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="education-entry">
+        <span class="education-year">2023–2026</span>
+        <div><h3>Université Paris-Saclay</h3><p>PhD in Applied Mathematics</p><p>École Normale Supérieure Paris-Saclay · Centre Borelli</p><p class="education-location">Gif-sur-Yvette, France</p></div>
+      </div>
+      <div class="education-entry">
+        <span class="education-year">2021–2022</span>
+        <div class="education-info"><h3>École Normale Supérieure Paris-Saclay</h3><p>M.Sc. in Applied Mathematics, MVA (Mathématiques, Vision, Apprentissage)</p><p class="education-location">Paris, France</p></div>
+      </div>
+    </section>
+  </main>
+  <dialog class="figure-dialog" aria-labelledby="figure-dialog-title">
+    <div class="figure-dialog-header"><h2 id="figure-dialog-title"></h2><button type="button" class="figure-close" aria-label="Close enlarged figure">Close ×</button></div>
+    <div class="figure-dialog-content"></div>
+  </dialog>
+  <footer class="wrap"><span>© 2026 Yujin Cho</span><a href="#about">Back to top ↑</a></footer>
+</body>
+</html>
