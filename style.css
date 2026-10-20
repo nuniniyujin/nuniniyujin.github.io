@@ -57,6 +57,7 @@ h2 { font: 500 28px/1.4 var(--serif); letter-spacing: -.5px; margin-bottom: 18px
 .authors strong { font-weight: 600; color: #445a46; }
 .paper-description { font-size: 13px; line-height: 1.8; color: #646f65; margin-top: 8px; }
 .paper-links, details { font-size: 12px; margin-top: 9px; }
+.paper-links { display: flex; flex-wrap: wrap; gap: 18px; }
 .paper-links a { border-bottom: 1px solid #bccaba; padding-bottom: 3px; }
 summary { color: var(--green); cursor: pointer; width: max-content; }
 details p { color: var(--muted); margin-top: 9px; line-height: 1.8; }
